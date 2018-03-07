@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Karate Score Counter V1.1</string>
+    <string name="player_a">Player A</string>
+    <string name="Intial_score">0</string>
+    <string name="reset">reset</string>
+    <string name="ippon_1">Ippon +1</string>
+    <string name="wasa_ari_0_5">Wasa Ari +0.5</string>
+    <string name="player_b">Player B</string>
+    <string name="todo">TODO</string>
+</resources>

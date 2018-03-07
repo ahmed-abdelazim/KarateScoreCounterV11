@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.karatescorecounterv11.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/bg"
+                tools:layout_alignTop="@id/imageView" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="32dp"
+                android:onClick="resetScore"
+                android:text="@string/reset" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/player_a" />
+
+                    <TextView
+                        android:id="@+id/team_a_score"
+                        style="@style/mainNumber"
+                        android:text="@string/Intial_score" />
+
+                    <Button
+                        style="@style/countButton"
+                        android:onClick="addOneForTeamA"
+                        android:text="@string/ippon_1" />
+
+
+                    <Button
+                        style="@style/countButton"
+                        android:onClick="addTwoForTeamA"
+                        android:text="@string/wasa_ari_0_5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/player_b" />
+
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        style="@style/mainNumber"
+                        android:text="@string/Intial_score" />
+
+                    <Button
+                        style="@style/countButton"
+                        android:onClick="addOneForTeamB"
+                        android:text="@string/ippon_1" />
+
+                    <Button
+                        style="@style/countButton"
+                        android:onClick="addTwoForTeamB"
+                        android:text="@string/wasa_ari_0_5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
